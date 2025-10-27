@@ -15,16 +15,16 @@ xmlns="http://www.w3.org/TR/REC-html40">
   <o:Author>Aek Aotenoy</o:Author>
   <o:Template>Normal</o:Template>
   <o:LastAuthor>Aek Aotenoy</o:LastAuthor>
-  <o:Revision>5</o:Revision>
-  <o:TotalTime>21</o:TotalTime>
+  <o:Revision>6</o:Revision>
+  <o:TotalTime>28</o:TotalTime>
   <o:Created>2025-10-27T04:43:00Z</o:Created>
-  <o:LastSaved>2025-10-27T05:02:00Z</o:LastSaved>
+  <o:LastSaved>2025-10-27T05:09:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
-  <o:Words>2803</o:Words>
-  <o:Characters>15978</o:Characters>
-  <o:Lines>133</o:Lines>
-  <o:Paragraphs>37</o:Paragraphs>
-  <o:CharactersWithSpaces>18744</o:CharactersWithSpaces>
+  <o:Words>3198</o:Words>
+  <o:Characters>18229</o:Characters>
+  <o:Lines>151</o:Lines>
+  <o:Paragraphs>42</o:Paragraphs>
+  <o:CharactersWithSpaces>21385</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -777,6 +777,63 @@ div.WordSection1
 
 <div class=WordSection1>
 
+<p class=MsoNormal><span class=GramE>&lt;!--</span> Chosen Palette: Calm &amp;
+Professional Blue --&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span class=GramE>&lt;!--</span> Application Structure Plan:
+The application is designed as a single-page narrative. It starts with the
+'Current Foundation' (the &quot;what is&quot;) to establish the scale and
+components of the current EMS system. This flows into the 'Future Vision 2030',
+which is broken into the three core pillars (Ecosystem, Infrastructure,
+Finance) from the report, allowing users to understand each component of the
+transformation. It concludes with 'Anticipated Impact', showing the
+&quot;why&quot; or the benefits of this vision. This thematic, top-down
+structure was chosen to guide the user from the present to the future
+logically, making the complex transformation easy to understand. --&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span class=GramE>&lt;!--</span> Visualization &amp; Content
+Choices: <o:p></o:p></p>
+
+<p class=MsoNormal>- Foundation Stats: Report Info (17+ years, 77 provinces,
+~10k units, ~100k practitioners) -&gt; Goal: Inform -&gt; Viz/Presentation:
+Stat Cards (HTML/Tailwind) -&gt; Interaction: None -&gt; Justification:
+Provides a quick, high-impact overview of the current scale.<o:p></o:p></p>
+
+<p class=MsoNormal>- Operational Structure: Report Info (85 centers, 10k units,
+100k practitioners) -&gt; Goal: Compare -&gt; Viz/Presentation: Bar Chart
+(Chart.js/Canvas) -&gt; Interaction: Hover Tooltip -&gt; Justification: A bar
+chart (using a log scale) effectively visualizes the vast difference in
+magnitude between the system's components.<o:p></o:p></p>
+
+<p class=MsoNormal>- Future Ecosystem: Report Info (Global partnerships, expert
+exchange, R&amp;D) -&gt; Goal: Inform (Composition) -&gt; Viz/Presentation:
+Donut Chart (Chart.js/Canvas) -&gt; Interaction: Hover Tooltip -&gt;
+Justification: A donut chart clearly shows the interconnected components of the
+new service model.<o:p></o:p></p>
+
+<p class=MsoNormal>- Next-Gen Infrastructure: Report Info (AI, 5G/6G, Satellite
+vs. Current) -&gt; Goal: Compare -&gt; Viz/Presentation: Radar Chart
+(Chart.js/Canvas) -&gt; Interaction: Hover Tooltip/Legend -&gt; Justification:
+A radar chart is ideal for comparing multi-dimensional capabilities (current
+vs. future) across metrics like speed, coverage, and intelligence.<o:p></o:p></p>
+
+<p class=MsoNormal>- Financial Framework: Report Info (Investment priorities
+for tech, training, R&amp;D) -&gt; Goal: Compare (Ranking) -&gt;
+Viz/Presentation: Horizontal Bar Chart (Chart.js/Canvas) -&gt; Interaction:
+Hover Tooltip -&gt; Justification: A horizontal bar chart clearly ranks the
+investment priorities, making it easy to see where resources will be focused.<o:p></o:p></p>
+
+<p class=MsoNormal>- Anticipated Impact: Report Info (Speed, Coverage,
+Outcomes) -&gt; Goal: Inform -&gt; Viz/Presentation: Thematic Icon Blocks
+(HTML/Tailwind) -&gt; Interaction: None -&gt; Justification: Simple, clear text
+blocks with icons effectively summarize the key benefits and end goals of the
+vision.<o:p></o:p></p>
+
+<p class=MsoNormal>--&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span class=GramE>&lt;!--</span> CONFIRMATION: NO SVG
+graphics used. NO Mermaid JS used. --&gt;<o:p></o:p></p>
+
 <p class=MsoNormal>&lt;!DOCTYPE html&gt;<o:p></o:p></p>
 
 <p class=MsoNormal>&lt;html lang=&quot;<span class=SpellE>en</span>&quot;&gt;<o:p></o:p></p>
@@ -822,8 +879,7 @@ href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&a
 <p class=MsoNormal><span style='mso-spacerun:yes'>           
 </span>background-color: #F2F2F2;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>       </span><span
-style='mso-spacerun:yes'> </span>}<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>}<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
 class=GramE>.chart</span>-container {<o:p></o:p></p>
@@ -831,8 +887,7 @@ class=GramE>.chart</span>-container {<o:p></o:p></p>
 <p class=MsoNormal><span style='mso-spacerun:yes'>            </span>position:
 relative;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>width:
-100%;<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>width: 100%;<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>            </span>max-width:
 600px;<o:p></o:p></p>
@@ -966,8 +1021,8 @@ max-w-3xl mx-auto&quot;&gt;Transforming Thailand's Emergency Medical Services
 id=&quot;foundation&quot; class=&quot;mb-16&quot;&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>            </span>&lt;h2
-class=&quot;text-3xl font-bold text-center mb-8
-text-[#00509D]&quot;&gt;Thailand's EMS: A Nationwide Shield&lt;/h2&gt;<o:p></o:p></p>
+class=&quot;text-3xl font-bold text-center mb-8 text-[#00509D]&quot;&gt;Thailand's
+EMS: A Nationwide Shield&lt;/h2&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>            </span>&lt;p
 class=&quot;text-center max-w-4xl mx-auto mb-10 text-gray-700&quot;&gt;For over
@@ -997,9 +1052,9 @@ text-gray-700 mt-2&quot;&gt;Years of Operation&lt;/p&gt;<o:p></o:p></p>
 <p class=MsoNormal><span style='mso-spacerun:yes'>               
 </span>&lt;div class=&quot;stat-card&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
-</span>&lt;p class=&quot;text-5xl font-black
-text-[#00C6D7]&quot;&gt;77&lt;/p&gt;<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
+style='mso-spacerun:yes'>                </span>&lt;p class=&quot;text-5xl
+font-black text-[#00C6D7]&quot;&gt;77&lt;/p&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                   
 </span>&lt;p class=&quot;text-lg font-<span class=SpellE>semibold</span>
@@ -1029,10 +1084,9 @@ text-gray-700 mt-2&quot;&gt;Certified Medical Units&lt;/p&gt;<o:p></o:p></p>
 </span>&lt;p class=&quot;text-5xl font-black
 text-[#00C6D7]&quot;&gt;~100K&lt;/p&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
-style='mso-spacerun:yes'>    </span>&lt;p class=&quot;text-lg font-<span
-class=SpellE>semibold</span> text-gray-700 mt-2&quot;&gt;Certified
-Practitioners&lt;/p&gt;<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>&lt;p class=&quot;text-lg font-<span class=SpellE>semibold</span>
+text-gray-700 mt-2&quot;&gt;Certified Practitioners&lt;/p&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>               
 </span>&lt;/div&gt;<o:p></o:p></p>
@@ -1046,8 +1100,8 @@ Practitioners&lt;/p&gt;<o:p></o:p></p>
 class=&quot;stat-card mt-12&quot;&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                
-</span>&lt;h3 class=&quot;text-2xl font-bold text-center mb-6 text-[#00509D]&quot;&gt;Operational
-Structure&lt;/h3&gt;<o:p></o:p></p>
+</span>&lt;h3 class=&quot;text-2xl font-bold text-center mb-6
+text-[#00509D]&quot;&gt;Operational Structure&lt;/h3&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                 </span>&lt;p
 class=&quot;text-center max-w-3xl mx-auto mb-8 text-gray-700&quot;&gt;A
@@ -1079,17 +1133,18 @@ id=&quot;vision&quot; class=&quot;mb-16&quot;&gt;<o:p></o:p></p>
 class=&quot;text-3xl font-bold text-center mb-2 text-[#00509D]&quot;&gt;Vision
 2030: Forging the Future of Response&lt;/h2&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>&lt;p
-class=&quot;text-center max-w-4xl mx-auto mb-10 text-gray-700&quot;&gt;To
-elevate our established system to a global leadership position by 2030, we
-envision a future built on three core pillars: a technologically advanced
-service ecosystem, world-class digital infrastructure, and a sustainable
-financial <span class=GramE>framework.&lt;</span>/p&gt;<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
+style='mso-spacerun:yes'>    </span>&lt;p class=&quot;text-center max-w-4xl
+mx-auto mb-10 text-gray-700&quot;&gt;To elevate our established system to a
+global leadership position by 2030, we envision a future built on three core
+pillars: a technologically advanced service ecosystem, world-class digital infrastructure,
+and a sustainable financial <span class=GramE>framework.&lt;</span>/p&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>            </span>&lt;div
-class=&quot;grid grid-cols-1 <span class=GramE>lg:grid</span>-cols-3 gap-8&quot;&gt;<o:p></o:p></p>
+class=&quot;grid grid-cols-1 <span class=GramE>lg:grid</span>-cols-3
+gap-8&quot;&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -1114,8 +1169,8 @@ post-incident <span class=GramE>analysis.&lt;</span>/p&gt;<o:p></o:p></p>
 <p class=MsoNormal><span style='mso-spacerun:yes'>                       
 </span>&lt;canvas id=&quot;<span class=SpellE>ecosystemDonut</span>&quot;&gt;&lt;/canvas&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
-</span>&lt;/div&gt;<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
+style='mso-spacerun:yes'>                </span>&lt;/div&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>               
 </span>&lt;/div&gt;<o:p></o:p></p>
@@ -1156,17 +1211,16 @@ decision-making for our teams and better outcomes for <span class=GramE>patients
 <p class=MsoNormal><span style='mso-spacerun:yes'>             </span>&lt;div
 class=&quot;stat-card mt-8&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span
-style='mso-spacerun:yes'>                  </span>&lt;h3 class=&quot;text-2xl
-font-bold text-center mb-4 text-[#00509D]&quot;&gt;3. Sustainable Financial
-Framework&lt;/h3&gt;<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>&lt;h3 class=&quot;text-2xl font-bold text-center mb-4
+text-[#00509D]&quot;&gt;3. Sustainable Financial Framework&lt;/h3&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                   
 </span>&lt;p class=&quot;text-center max-w-4xl mx-auto text-gray-700
 mb-6&quot;&gt;Strategic and sufficient investment is critical to realizing this
 transformation. A robust budget will fuel the technological upgrades, human
-resource development, and innovation required to build and sustain a
-world-leading, comprehensive emergency medical system for <span class=GramE>all.&lt;</span>/p&gt;<o:p></o:p></p>
+resource development, and innovation required to build and sustain a world-leading,
+comprehensive emergency medical system for <span class=GramE>all.&lt;</span>/p&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                   
 </span>&lt;div class=&quot;chart-container&quot;&gt;<o:p></o:p></p>
@@ -1189,8 +1243,8 @@ world-leading, comprehensive emergency medical system for <span class=GramE>all.
 id=&quot;impact&quot;&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>             </span>&lt;h2
-class=&quot;text-3xl font-bold text-center mb-8 text-[#00509D]&quot;&gt;The Anticipated
-Impact by 2030&lt;/h2&gt;<o:p></o:p></p>
+class=&quot;text-3xl font-bold text-center mb-8 text-[#00509D]&quot;&gt;The
+Anticipated Impact by 2030&lt;/h2&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>             </span>&lt;p
 class=&quot;text-center max-w-4xl mx-auto mb-10 text-gray-700&quot;&gt;This
@@ -1200,8 +1254,7 @@ in regional healthcare, and contribute positively to the nation's social and
 economic <span class=GramE>stability.&lt;</span>/p&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>             </span>&lt;div
-class=&quot;grid grid-cols-1 <span class=GramE>md:grid</span>-cols-3
-gap-8&quot;&gt;<o:p></o:p></p>
+class=&quot;grid grid-cols-1 <span class=GramE>md:grid</span>-cols-3 gap-8&quot;&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>               
 </span>&lt;div class=&quot;tech-pillar&quot;&gt;<o:p></o:p></p>
@@ -1258,7 +1311,8 @@ class=GramE>rates.&lt;</span>/p&gt;<o:p></o:p></p>
 <p class=MsoNormal><span style='mso-spacerun:yes'>               
 </span>&lt;/div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>             </span>&lt;/div&gt;<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            
+</span>&lt;/div&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>       
 </span>&lt;/section&gt;<o:p></o:p></p>
@@ -1301,8 +1355,8 @@ class=SpellE>darkBlue</span>: '#00509D',<o:p></o:p></p>
 <p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
 class=SpellE>lightGray</span>: '#F2F2F2',<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>           </span><span
-style='mso-spacerun:yes'>     </span>teal: '#4ECDC4',<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>teal:
+'#4ECDC4',<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                </span>red:
 '#FF6B6B'<o:p></o:p></p>
@@ -1315,8 +1369,9 @@ style='mso-spacerun:yes'>     </span>teal: '#4ECDC4',<o:p></o:p></p>
 class=SpellE>wrapLabel</span> = (str, <span class=SpellE>maxWidth</span>) =&gt;
 {<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>if <span
-class=GramE>(!str</span>) return '';<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
+style='mso-spacerun:yes'>          </span>if <span class=GramE>(!str</span>)
+return '';<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                </span>if (<span
 class=SpellE><span class=GramE>str.length</span></span> &lt;= <span
@@ -1374,8 +1429,9 @@ lines;<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>            </span><o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>const <span
-class=SpellE>tooltipTitleCallback</span> = {<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>           </span><span
+style='mso-spacerun:yes'> </span>const <span class=SpellE>tooltipTitleCallback</span>
+= {<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>               
 </span>plugins: {<o:p></o:p></p>
@@ -1386,18 +1442,16 @@ class=SpellE>tooltipTitleCallback</span> = {<o:p></o:p></p>
 <p class=MsoNormal><span style='mso-spacerun:yes'>                       
 </span>callbacks: {<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'> </span><span
-style='mso-spacerun:yes'>                           </span>title: function(<span
-class=SpellE>tooltipItems</span>) {<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                           
+</span>title: function(<span class=SpellE>tooltipItems</span>) {<o:p></o:p></p>
 
 <p class=MsoNormal><span
 style='mso-spacerun:yes'>                                </span>const item = <span
 class=SpellE><span class=GramE>tooltipItems</span></span><span class=GramE>[</span>0];<o:p></o:p></p>
 
-<p class=MsoNormal><span
-style='mso-spacerun:yes'>                                </span>if <span
-class=GramE>(!item</span> || !<span class=SpellE>item.chart.data.labels</span>)
-return '';<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>       </span><span
+style='mso-spacerun:yes'>                         </span>if <span class=GramE>(!item</span>
+|| !<span class=SpellE>item.chart.data.labels</span>) return '';<o:p></o:p></p>
 
 <p class=MsoNormal><span
 style='mso-spacerun:yes'>                                </span>let label = <span
@@ -1409,9 +1463,8 @@ style='mso-spacerun:yes'>                                </span>if (<span
 class=SpellE>Array.isArray</span>(label)) {<o:p></o:p></p>
 
 <p class=MsoNormal><span
-style='mso-spacerun:yes'>                               </span><span
-style='mso-spacerun:yes'>   </span>return <span class=SpellE><span class=GramE>label.join</span></span>('
-');<o:p></o:p></p>
+style='mso-spacerun:yes'>                                  </span>return <span
+class=SpellE><span class=GramE>label.join</span></span>(' ');<o:p></o:p></p>
 
 <p class=MsoNormal><span
 style='mso-spacerun:yes'>                                </span>} else {<o:p></o:p></p>
@@ -1456,8 +1509,9 @@ style='mso-spacerun:yes'>                                </span>size: 14<o:p></o
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>const <span
-class=SpellE>structureCtx</span> = <span class=SpellE><span class=GramE>document.getElementById</span></span>('<span
+<p class=MsoNormal><span style='mso-spacerun:yes'>   </span><span
+style='mso-spacerun:yes'>         </span>const <span class=SpellE>structureCtx</span>
+= <span class=SpellE><span class=GramE>document.getElementById</span></span>('<span
 class=SpellE>structureChart</span>')?.<span class=SpellE>getContext</span>('2d');<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>            </span>if(<span
@@ -1498,7 +1552,8 @@ class=GramE>Chart(</span><span class=SpellE>structureCtx</span>, {<o:p></o:p></p
 <p class=MsoNormal><span style='mso-spacerun:yes'>                       
 </span>}]<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span>},<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   </span><span
+style='mso-spacerun:yes'> </span>},<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                   
 </span>options: {<o:p></o:p></p>
@@ -1512,8 +1567,8 @@ class=GramE>Chart(</span><span class=SpellE>structureCtx</span>, {<o:p></o:p></p
 <p class=MsoNormal><span style='mso-spacerun:yes'>                       
 </span><span class=SpellE>maintainAspectRatio</span>: false,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     </span><span
-style='mso-spacerun:yes'>   </span>scales: {<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+</span>scales: {<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                           
 </span>y: {<o:p></o:p></p>
@@ -1533,8 +1588,8 @@ style='mso-spacerun:yes'>                                </span>ticks: {<o:p></o
 style='mso-spacerun:yes'>                                    </span>font: <span
 class=GramE>{ size</span>: 12 }<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-style='mso-spacerun:yes'>                      </span>}<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                      
+</span><span style='mso-spacerun:yes'>         </span>}<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                           
 </span>},<o:p></o:p></p>
@@ -1555,8 +1610,8 @@ style='mso-spacerun:yes'>                                </span>}<o:p></o:p></p>
 <p class=MsoNormal><span style='mso-spacerun:yes'>                           
 </span>}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>       </span><span
-style='mso-spacerun:yes'>                 </span>},<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+style='mso-spacerun:yes'>    </span>},<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                        
 </span>plugins: {<o:p></o:p></p>
@@ -1576,7 +1631,8 @@ style='mso-spacerun:yes'>                                </span>display: false<o
 <p class=MsoNormal><span style='mso-spacerun:yes'>                       
 </span>}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span>}<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>           </span><span
+style='mso-spacerun:yes'>         </span>}<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                </span>});<o:p></o:p></p>
 
@@ -1622,11 +1678,11 @@ class=GramE>Chart(</span><span class=SpellE>ecosystemCtx</span>, {<o:p></o:p></p
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                    </span>},<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'> </span><span
-style='mso-spacerun:yes'>                   </span>options: {<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>options: {<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                       
-</span>...<span class=SpellE>tooltipTitleCallback</span>,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span><span
+style='mso-spacerun:yes'>            </span>...<span class=SpellE>tooltipTitleCallback</span>,<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                       
 </span>responsive: true,<o:p></o:p></p>
@@ -1690,8 +1746,8 @@ class=GramE>Chart(</span><span class=SpellE>techRadarCtx</span>, {<o:p></o:p></p
 <p class=MsoNormal><span style='mso-spacerun:yes'>                           
 </span>data: [95, 98, 90, 97, 92],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>               </span><span
-style='mso-spacerun:yes'>             </span>fill: true,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                           
+</span>fill: true,<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                           
 </span><span class=SpellE>backgroundColor</span>: '<span class=SpellE><span
@@ -1703,8 +1759,8 @@ class=GramE>rgba</span></span><span class=GramE>(</span>0, 198, 215, 0.2)',<o:p>
 <p class=MsoNormal><span style='mso-spacerun:yes'>                           
 </span><span class=SpellE>pointBackgroundColor</span>: <span class=SpellE>brilliantBlues.cyan</span>,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                          
-</span><span style='mso-spacerun:yes'> </span><span class=SpellE>pointBorderColor</span>:
+<p class=MsoNormal><span style='mso-spacerun:yes'> </span><span
+style='mso-spacerun:yes'>                           </span><span class=SpellE>pointBorderColor</span>:
 '#<span class=SpellE>fff</span>',<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                           
@@ -1733,9 +1789,8 @@ class=GramE>rgba</span></span><span class=GramE>(</span>255, 107, 107, 0.2)',<o:
 <p class=MsoNormal><span style='mso-spacerun:yes'>                           
 </span><span class=SpellE>borderColor</span>: <span class=SpellE>brilliantBlues.red</span>,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
-style='mso-spacerun:yes'>        </span><span class=SpellE>pointBackgroundColor</span>:
-<span class=SpellE>brilliantBlues.red</span>,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                           
+</span><span class=SpellE>pointBackgroundColor</span>: <span class=SpellE>brilliantBlues.red</span>,<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                           
 </span><span class=SpellE>pointBorderColor</span>: '#<span class=SpellE>fff</span>',<o:p></o:p></p>
@@ -1747,8 +1802,8 @@ class=SpellE>fff</span>',<o:p></o:p></p>
 <p class=MsoNormal><span style='mso-spacerun:yes'>                           
 </span><span class=SpellE>pointHoverBorderColor</span>: <span class=SpellE>brilliantBlues.red</span><o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   </span><span
-style='mso-spacerun:yes'>     </span>}]<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+</span>}]<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                    </span>},<o:p></o:p></p>
 
@@ -1781,9 +1836,9 @@ false<o:p></o:p></p>
 <p class=MsoNormal><span
 style='mso-spacerun:yes'>                                </span>},<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>     </span><span
-style='mso-spacerun:yes'>                           </span><span class=SpellE>suggestedMin</span>:
-0,<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                </span><span
+class=SpellE>suggestedMin</span>: 0,<o:p></o:p></p>
 
 <p class=MsoNormal><span
 style='mso-spacerun:yes'>                                </span><span
@@ -1800,8 +1855,8 @@ style='mso-spacerun:yes'>                                    </span>font: {<o:p>
 style='mso-spacerun:yes'>                                        </span>size:
 14<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     </span><span
-style='mso-spacerun:yes'>               </span>}<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+style='mso-spacerun:yes'>                    </span>}<o:p></o:p></p>
 
 <p class=MsoNormal><span
 style='mso-spacerun:yes'>                                </span>}<o:p></o:p></p>
@@ -1839,8 +1894,9 @@ class=SpellE>rawLabels</span> = [<o:p></o:p></p>
 <p class=MsoNormal><span style='mso-spacerun:yes'>                   
 </span>'Research &amp; Development (R&amp;D)', <o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>         </span><span
-style='mso-spacerun:yes'>           </span>'Sustainable Operational Expansion',<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
+style='mso-spacerun:yes'>                </span>'Sustainable Operational
+Expansion',<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                   
 </span>'Public Awareness &amp; Education'<o:p></o:p></p>
@@ -1857,8 +1913,8 @@ class=GramE>(</span>label =&gt; <span class=SpellE>wrapLabel</span>(label,
 <p class=MsoNormal><span style='mso-spacerun:yes'>                </span>new <span
 class=GramE>Chart(</span><span class=SpellE>budgetCtx</span>, {<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
-</span>type: 'bar',<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>         </span><span
+style='mso-spacerun:yes'>           </span>type: 'bar',<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                   
 </span>data: {<o:p></o:p></p>
@@ -1882,8 +1938,8 @@ class=GramE>Chart(</span><span class=SpellE>budgetCtx</span>, {<o:p></o:p></p>
 style='mso-spacerun:yes'>                                </span><span
 class=SpellE>brilliantBlues.darkBlue</span>, <o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
-style='mso-spacerun:yes'>                </span><span class=SpellE>brilliantBlues.cyan</span>,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                            
+</span><span style='mso-spacerun:yes'>   </span><span class=SpellE>brilliantBlues.cyan</span>,<o:p></o:p></p>
 
 <p class=MsoNormal><span
 style='mso-spacerun:yes'>                                </span><span
@@ -1902,8 +1958,9 @@ style='mso-spacerun:yes'>                                </span>'#FDBA74'<o:p></
 <p class=MsoNormal><span style='mso-spacerun:yes'>                           
 </span><span class=SpellE>borderWidth</span>: 0,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                           
-</span><span class=SpellE>borderRadius</span>: 5<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
+style='mso-spacerun:yes'>                  </span><span class=SpellE>borderRadius</span>:
+5<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                       
 </span>}]<o:p></o:p></p>
@@ -1922,8 +1979,9 @@ style='mso-spacerun:yes'>                                </span>'#FDBA74'<o:p></
 <p class=MsoNormal><span style='mso-spacerun:yes'>                       
 </span>responsive: true,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                       
-</span><span class=SpellE>maintainAspectRatio</span>: false,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
+style='mso-spacerun:yes'>              </span><span class=SpellE>maintainAspectRatio</span>:
+false,<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                       
 </span>scales: {<o:p></o:p></p>
@@ -1939,8 +1997,8 @@ class=SpellE>beginAtZero</span>: true,<o:p></o:p></p>
 style='mso-spacerun:yes'>                                </span>title: <span
 class=GramE>{ display</span>: true, text: 'Priority Score' }<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                           
-</span>},<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               </span><span
+style='mso-spacerun:yes'>             </span>},<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                            
 </span>y: {<o:p></o:p></p>
@@ -1952,8 +2010,8 @@ style='mso-spacerun:yes'>                                </span>ticks: {<o:p></o
 style='mso-spacerun:yes'>                                     </span>font: <span
 class=GramE>{ size</span>: 14 }<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>             </span><span
-style='mso-spacerun:yes'>                   </span>}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                </span>}<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                           
 </span>}<o:p></o:p></p>
@@ -1976,8 +2034,8 @@ style='mso-spacerun:yes'>                                </span>display: false<o
 <p class=MsoNormal><span style='mso-spacerun:yes'>                           
 </span>}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                       
-</span>}<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                 </span><span
+style='mso-spacerun:yes'>       </span>}<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                    </span>}<o:p></o:p></p>
 
